@@ -40,6 +40,18 @@ section{max-width:1150px;margin:auto;padding:68px 20px}.title{text-align:center;
 .contact{text-align:center;background:linear-gradient(135deg,#fff4c8,#fff);border:2px solid #dfbc58;border-radius:26px;padding:35px}
 .phone{font-size:clamp(30px,6vw,56px);font-weight:bold;color:#8c5d16}.phone a{text-decoration:none}
 footer{text-align:center;padding:30px 20px;color:#7d6643;border-top:1px solid #ead8aa}
+
+.sayadaw-wrap{display:grid;grid-template-columns:minmax(280px,460px) 1fr;gap:34px;align-items:center}
+.sayadaw-photo{background:#fff;border:2px solid #d9ad43;border-radius:24px;padding:10px;box-shadow:0 12px 35px rgba(91,56,18,.12)}
+.sayadaw-photo img{display:block;width:100%;height:auto;border-radius:16px}
+.sayadaw-info{background:linear-gradient(135deg,#fff8df,#fffdf8);border:1px solid #ead18d;border-radius:24px;padding:32px}
+.sayadaw-name{text-align:center;color:#8b5a12;font-size:clamp(30px,4vw,46px);margin:0 0 20px;font-weight:700}
+.sayadaw-titles{text-align:center;font-size:clamp(17px,2vw,21px);line-height:2.15;color:#4b2b12}
+.sayadaw-titles div{margin:4px 0}
+.sayadaw-role{margin-top:24px;padding-top:18px;border-top:1px solid #e5c878;text-align:center;color:#765329;font-size:clamp(16px,2vw,20px);font-weight:600}
+@media(max-width:900px){.sayadaw-wrap{grid-template-columns:1fr;max-width:700px;margin:auto}.sayadaw-photo{max-width:500px;margin:auto}.sayadaw-info{padding:25px}}
+@media(max-width:560px){.sayadaw-info{padding:20px}.sayadaw-titles{font-size:17px;line-height:2}.sayadaw-role{font-size:17px}}
+
 @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.routes{grid-template-columns:1fr}}
 @media(max-width:560px){section{padding:46px 15px}.hero{min-height:76vh}.hero:after{inset:9px}.card{padding:21px}.pali{font-size:17px}.gallery{grid-template-columns:1fr}.gallery img{height:360px}.stats{grid-template-columns:1fr}.location{padding:25px}.nav{justify-content:flex-start;overflow:auto;flex-wrap:nowrap}.nav a{white-space:nowrap}}
 </style>
@@ -55,7 +67,7 @@ footer{text-align:center;padding:30px 20px;color:#7d6643;border-top:1px solid #e
 </header>
 
 <nav class="nav">
-<a href="#intro">မိတ်ဆက်</a><a href="#history">သမိုင်း</a><a href="#special">ထူးခြားချက်</a><a href="#gallery">ဓာတ်ပုံများ</a><a href="#route">ဘယ်လိုသွားမလဲ</a><a href="#prayer">ဆုတောင်းစာ</a><a href="#contact">ဆက်သွယ်ရန်</a>
+<a href="#intro">မိတ်ဆက်</a><a href="#sayadaw">ဆရာတော်ကြီး</a><a href="#history">သမိုင်း</a><a href="#special">ထူးခြားချက်</a><a href="#gallery">ဓာတ်ပုံများ</a><a href="#route">ဘယ်လိုသွားမလဲ</a><a href="#prayer">ဆုတောင်းစာ</a><a href="#contact">ဆက်သွယ်ရန်</a>
 </nav>
 
 <section id="intro">
@@ -66,6 +78,26 @@ footer{text-align:center;padding:30px 20px;color:#7d6643;border-top:1px solid #e
 <div>စေတောပဏိဓိဟေတု ဟိ ၊ သတ္တာ ဂစ္ဆန္တိ သုဂ္ဂတိံ။</div>
 </div>
 <div class="highlight"><b>တည်နေရာ —</b> ရှမ်းပြည်နယ်တောင်ပိုင်း၊ ကလောခရိုင်၊ ကလောမြို့နယ်၊ အောင်ပန်းမြို့</div>
+</section>
+
+
+<section id="sayadaw">
+<h2 class="title">ဦးစီးတည်ထားပူဇော်သော ဆရာတော်ကြီး</h2>
+<p class="subtitle">သီရိမင်္ဂလာအောင်ချမ်းသာစေတီတော်မြတ်ကြီးကို ဦးစီးတည်ထားပူဇော်သော အောင်ချမ်းသာစာသင်တိုက်၏ ဦးစီးပဓာနနာယက ဆရာတော်ကြီး</p>
+<div class="sayadaw-wrap">
+  <div class="sayadaw-photo"><img src="sayadaw.png" alt="ဘဒ္ဒန္တပညာဝံသ ဆရာတော်ကြီး၏ ပုံတော်"></div>
+  <div class="sayadaw-info">
+    <h3 class="sayadaw-name">ဘဒ္ဒန္တပညာဝံသ</h3>
+    <div class="sayadaw-titles">
+      <div>သာသနဓဇဓမ္မာစရိယ</div>
+      <div>မဟာဂန္ထဝါစကပဏ္ဍိတ</div>
+      <div>အဂ္ဂမဟာဂန္ထဝါစကပဏ္ဍိတ</div>
+      <div>အဂ္ဂမဟာပဏ္ဍိတ</div>
+      <div>နိုင်ငံတော်ဗဟိုသံဃာ့ဝန်ဆောင် (ငြိမ်း)</div>
+    </div>
+    <div class="sayadaw-role">အောင်ပန်းမြို့၊ အောင်ချမ်းသာစာသင်တိုက်<br>ဦးစီးပဓာနနာယက ဆရာတော်ကြီး</div>
+  </div>
+</div>
 </section>
 
 <section id="history" class="history">
